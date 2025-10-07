@@ -176,8 +176,8 @@ header {
 .formulario-contato button {
     width: 100%;
     padding: 12px;
-    background-color: #606060;
-    color: #fff;
+    background-color: #c5c5c5;
+    color: rgb(48, 48, 48);
     font-size: 1rem;
     font-weight: 700;
     border: none;
@@ -187,7 +187,8 @@ header {
 }
 
 .formulario-contato button:hover {
-    background-color: #0097a7;
+    background-color: #606060;
+    color: var(--fonte-principal);
 }
 
 /* FOOTER */
@@ -205,3 +206,67 @@ footer p {
     font-weight: 500;
     padding: 13px;
 }
+
+.carrossel {
+    position: relative;
+    width: 600px;
+    overflow:hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slides img {
+    width: 600px;
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.prev { left: 10px; }
+  button.next { right: 10px; }
+
+  .cards {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;  
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+  
+  .card {
+    background-color: #0c0d0f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .card img {
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
