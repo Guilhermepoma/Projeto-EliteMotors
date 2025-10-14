@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imgs/Logo.png" type="image/x-icon">
-    <title>Elite Motors</title>
+    <title>Elite Motors - Notícias Automotivas</title>
 </head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 <body>
     <header>
         <nav class="dp-menu">
             <ul>
                 <div class="menu-esquerda">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Catálogo</a>
+                    <li><a href="">Categorias</a>
                         <ul>
-                            <li><a href="bugatti.html">Bugatti</a></li>
-                            <li><a href="Koenigsegg.html">Koenigsegg</a></li>
-                            <li><a href="Rolls-Royce.html">Rolls-Royce</a></li>
-                            <li><a href="Pagani.html">Pagani</a></li>
+                            <li><a href="categories/lancamentos.html">Lançamentos</a></li>
+                            <li><a href="categories/tecnologia.html">Tecnologia</a></li>
+                            <li><a href="categories/reviews.html">Reviews</a></li>
                         </ul>
                     </li>
                 </div>
@@ -29,44 +27,113 @@
                 </div>
 
                 <div class="menu-direita">
-                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </div>
             </ul>
         </nav>
     </header>
-      <!-- Carrossel -->
-      <div class="carrossel">
-        <div class="slides">
-          <img src="imgs/carros/carrosel/Bugatti.png" alt="Slide 1">
-          <img src="imgs/carros/carrosel/Rolls_Royce.png" alt="Slide 2">
-          <img src="imgs/carros/carrosel/Pagani.png" alt="Slide 3">
-          <img src="imgs/carros/carrosel/Koeni.png" alt="Slide 4">
-        </div>
+
+    <!-- Carrossel de Notícias Destacadas -->
+    <div class="carrossel">
         <button class="prev">‹</button>
-        <button class="next">›</button>
-      </div>
-
-      <div class="home">
-        <h1>Seja Bem-vindo ao <br>Elite Motors</h1>
-        <h3>Principal pagina de noticias do mundo automotivo</h3>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Novidades</h3>
-                <img src="imgs/carros/carrosel/Pagani.png">
+      
+        <div class="slides-container">
+          <div class="slides">
+            <div class="slide-item">
+                <img src="imgs/carros/carrosel/Bugatti.png" alt="Hyperion XP-1">
+                <div class="slide-caption">
+                    <h2>Revolução Elétrica: O Novo Hyperion XP-1</h2>
+                    <p>O mais recente hypercar elétrico que promete redefinir os limites de desempenho.</p>
+                </div>
             </div>
+            <div class="slide-item">
+                <img src="imgs/carros/carrosel/Koeni.png" alt="Veículo Autônomo">
+                <div class="slide-caption">
+                    <h2>Tecnologia Autônoma: O Futuro da Condução</h2>
+                    <p>Avanços na tecnologia de veículos autônomos transformam a mobilidade.</p>
+                </div>
+            </div>
+            <div class="slide-item">
+                <img src="imgs/carros/carrosel/Pagani.png" alt="Porsche 911 GT3 RS">
+                <div class="slide-caption">
+                    <h2>Análise Exclusiva: Porsche 911 GT3 RS</h2>
+                    <p>Uma obra-prima da engenharia alemã testada em Nürburgring.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+        <button class="next">›</button>
+    </div>
 
-            <div class="card">
-                <h3>Novidades</h3>
-                <img src="imgs/carros/carrosel/Pagani.png">
+    <div class="home">
+        <h1>Bem-vindo ao <br>Elite Motors</h1>
+        <h3>Principal página de notícias do mundo automotivo</h3>
+
+        <!-- Seção de Notícias Principais -->
+        <div class="noticias-section">
+            <h2>Últimas Notícias</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <img src="imgs/carros/carrosel/Bugatti.png" alt="Hyperion XP-1">
+                    <div class="card-content">
+                        <span class="card-categoria">Lançamentos</span>
+                        <h3>Revolução Elétrica: O Novo Hyperion XP-1 Chega ao Mercado</h3>
+                        <p>A indústria automotiva global está em polvorosa com o lançamento oficial do Hyperion XP-1, o mais recente hypercar elétrico que promete redefinir os limites de desempenho e sustentabilidade.</p>
+                        <a href="news/noticia1.html" class="btn-ler-mais">Leia Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imgs/carros/carrosel/Koeni.png" alt="Veículo Autônomo">
+                    <div class="card-content">
+                        <span class="card-categoria">Tecnologia</span>
+                        <h3>Tecnologia Autônoma: O Futuro da Condução Chega Mais Perto</h3>
+                        <p>Os avanços na tecnologia de veículos autônomos continuam a surpreender, com novas pesquisas e desenvolvimentos prometendo transformar a maneira como interagimos com nossos carros.</p>
+                        <a href="news/noticia2.html" class="btn-ler-mais">Leia Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imgs/carros/carrosel/Pagani.png" alt="Porsche 911 GT3 RS">
+                    <div class="card-content">
+                        <span class="card-categoria">Reviews</span>
+                        <h3>Análise Exclusiva: O Novo Porsche 911 GT3 RS em Detalhes</h3>
+                        <p>Tivemos a oportunidade de testar o mais recente lançamento da Porsche, o 911 GT3 RS, na lendária pista de Nürburgring. Uma obra-prima da engenharia alemã.</p>
+                        <a href="news/noticia3.html" class="btn-ler-mais">Leia Mais</a>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
+
+        <!-- Seção de Categorias -->
+        <div class="categorias-section">
+            <h2>Explore por Categoria</h2>
+            <div class="categorias-grid">
+                <a href="categories/lancamentos.html" class="categoria-item">
+                    <h3>Lançamentos</h3>
+                    <p>Novos modelos e lançamentos exclusivos</p>
+                </a>
+                <a href="categories/tecnologia.html" class="categoria-item">
+                    <h3>Tecnologia</h3>
+                    <p>Inovações e avanços tecnológicos</p>
+                </a>
+                <a href="categories/reviews.html" class="categoria-item">
+                    <h3>Reviews</h3>
+                    <p>Análises detalhadas e testes de pista</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>Desvende o mundo automotivo de alto desempenho. Elite Motors conecta você às histórias, designs e inovações que definem a elite sobre rodas.</p>
         <p>© 2025 Elite Motors. Todos os direitos reservados.</p>
     </footer>
-  <script src="js/carrosel.js"></script>
+
+    <script src="js/carrosel.js"></script>
 </body>
 </html>
+
