@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/Logo.png" type="image/x-icon">
+    <title>Galeria - Elite Motors</title>
+</head>
+<body>
+    <header>
+        <nav class="dp-menu">
+            <ul>
+                <div class="menu-esquerda">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Categorias</a>
+                        <ul>
+                            <li><a href="categories/lancamentos.html">Lançamentos</a></li>
+                            <li><a href="categories/tecnologia.html">Tecnologia</a></li>
+                            <li><a href="categories/reviews.html">Reviews</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="menu-logo">
+                    <img src="imgs/Logo.png" alt="Elite Motors Logo">
+                </div>
+
+                <div class="menu-direita">
+                    <li><a href="sobre.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="galeria-conteudo">
+        <h1>Galeria Elite Motors</h1>
+        <p class="galeria-descricao">Explore nossa coleção de imagens dos carros mais incríveis do mundo automotivo</p>
+
+        <!-- Modal para visualizar imagem em destaque -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg" src="" alt="">
+            <div id="caption"></div>
+            <button class="modal-prev">❮</button>
+            <button class="modal-next">❯</button>
+        </div>
+
+        <!-- Galeria de imagens -->
+        <div class="galeria-grid">
+            <div class="galeria-item" data-index="0">
+                <img src="imgs/carros/carrosel/Bugatti.png" alt="Bugatti Chiron - Rei da Arrancada">
+                <div class="galeria-overlay">
+                    <h3>Bugatti Chiron</h3>
+                    <p>Rei da Arrancada</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-index="1">
+                <img src="imgs/carros/carrosel/Koeni.png" alt="Koenigsegg - Tecnologia Autônoma">
+                <div class="galeria-overlay">
+                    <h3>Koenigsegg</h3>
+                    <p>Futuro da Condução</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-index="2">
+                <img src="imgs/carros/carrosel/Pagani.png" alt="Pagani Huayra - Obra-Prima Italiana">
+                <div class="galeria-overlay">
+                    <h3>Pagani Huayra</h3>
+                    <p>Obra-Prima Italiana</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-index="3">
+                <img src="imgs/carros/carrosel/Rolls_Royce.png" alt="Rolls-Royce - Luxo Absoluto">
+                <div class="galeria-overlay">
+                    <h3>Rolls-Royce</h3>
+                    <p>Luxo Absoluto</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de informações sobre a galeria -->
+        <div class="galeria-info">
+            <h2>Sobre Nossa Coleção</h2>
+            <p>A galeria Elite Motors apresenta uma seleção curada dos automóveis mais extraordinários do mundo. Cada imagem representa a excelência em design, engenharia e desempenho. Desde os hypercars mais rápidos até os veículos de luxo mais sofisticados, nossa coleção celebra a evolução contínua da indústria automotiva.</p>
+            <p>Navegue pela galeria para descobrir detalhes fascinantes de cada modelo, desde suas características técnicas até as histórias que os tornam únicos no mercado global de automóveis de alta performance.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desvende o mundo automotivo de alto desempenho. Elite Motors conecta você às histórias, designs e inovações que definem a elite sobre rodas.</p>
+        <p>© 2025 Elite Motors. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/galeria.js"></script>
+</body>
+</html>
+
